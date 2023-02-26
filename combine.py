@@ -30,7 +30,27 @@ print(moon_df.head())
 test_merge = pd.merge(bites_df, moon_df, left_on='bite_date', right_on='date')
 print(test_merge)
 
-test_merge.to_csv('assets/test_merge.csv')
-
+# https://stackoverflow.com/questions/29370057/select-dataframe-rows-between-two-dates
 mask = (test_merge['bite_date'] > '2009-10-28') & (test_merge['bite_date'] <= '2017-09-07')
-print(test_merge.loc[mask])
+df = test_merge.loc[mask]
+
+"""
+ This didn't work
+columns_to_drop = ['vaccination_yrs', 'vaccination_date', 'victim_zip', 'AdvIssuedYNDesc', 
+                   'quarantine_date', 'DispositionIDDesc', 'head_sent_date', 'release_date', 
+                   'Unnamed: 0', 'date']
+"""
+
+df = df.drop(['vaccination_yrs', 'vaccination_date', 'victim_zip', 'AdvIssuedYNDesc', 
+                'quarantine_date', 'DispositionIDDesc', 'head_sent_date', 'release_date', 
+                'Unnamed: 0', 'date'], axis=1)
+
+print(df)
+
+unique_ResultsIDDesc = df['ResultsIDDesc'].unique()
+print(unique_ResultsIDDesc)
+
+unique_WhereBittenIDDesc = df['WhereBittenIDDesc'].unique()
+print(unique_WhereBittenIDDesc)
+
+df.to_csv('assets/merged_df.csv')
