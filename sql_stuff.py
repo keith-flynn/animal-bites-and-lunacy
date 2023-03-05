@@ -1,9 +1,6 @@
 import sqlite3
 import pandas as pd
 
-# dates 2009-10-28 - 2017-09-08
-# bite_date,SpeciesIDDesc,BreedIDDesc,GenderIDDesc,color,victim_zip,WhereBittenIDDesc,ResultsIDDesc
-
 con = sqlite3.connect("lunacy.db")
 
 bite_df = pd.read_sql("""SELECT 
@@ -40,5 +37,30 @@ moon_df = pd.read_sql("""SELECT
                             date;""", con)
 
 print(moon_df)
+
+df = pd.read_sql("""SELECT 
+                        b.bite_date, 
+                        b.SpeciesIDDesc, 
+                        b.BreedIDDesc, 
+                        b.GenderIDDesc, 
+                        b.color, 
+                        b.victim_zip, 
+                        b.WhereBittenIDDesc, 
+                        b.ResultsIDDesc, 
+                        m.date, 
+                        m.illum_pct, 
+                        m.phase
+                    FROM 
+                        bites b 
+                    LEFT JOIN moon m ON 
+                        m.date = b.bite_date 
+                    WHERE 
+                        b.bite_date 
+                    BETWEEN 
+                        '2009-10-29' and '2017-09-08' 
+                    ORDER BY 
+                        bite_date;""", con)
+
+print(df)
 
 con.close()
