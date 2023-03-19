@@ -8,7 +8,7 @@ A comparison of animal bite data in Louisville, KY from 2010-2017 with phases of
 - Imports data from CSV files to a SQL database
 - Queries SQL database for relevant data
 - Cleans data and merges into a Pandas dataframe
-- Includes Tableau dashboard for visualizations
+- Includes [Tableau dashboard for visualizations](https://public.tableau.com/app/profile/keith.flynn3286/viz/AnimalBitesandLunacy/Story1?publish=yes)
 ---
 ### Code and Resources Used:
 - Python 3.10
@@ -19,8 +19,14 @@ A comparison of animal bite data in Louisville, KY from 2010-2017 with phases of
 ---
 ## Summary
 ---
-The goal of this project is to discover if there is any correlation between animal bites reported in Louisville, KY between October 29th 2009 and September 8th 2017, and the phase of the moon when the bite occurred. The bite dataset contains reports from many other years, but the reporting is inconsistent and missing most of the applicable data points. 
+The goal of this project is to discover if there is any correlation between animal bites reported in Louisville, KY between October 29th 2009 and September 8th 2017, and the phase of the moon when the bite occurred. The bite dataset contains reports from many other years, but the reporting is inconsistent and missing most of the applicable data points.
 
+---
+## Visualizations
+---
+[Tableau Story: Animal Bites and Lunacy](https://public.tableau.com/app/profile/keith.flynn3286/viz/AnimalBitesandLunacy/Story1?publish=yes)
+
+---
 ## Sources
 ---
 - [Animal Bites](https://www.kaggle.com/datasets/rtatman/animal-bites)
