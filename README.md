@@ -4,7 +4,6 @@ A comparison of animal bite data in Louisville, KY from 2010-2017 with phases of
 
 ---
 ## Project Overview:
----
 - Imports data from CSV files to a SQL database
 - Queries SQL database for relevant data
 - Cleans data and merges into a Pandas dataframe
@@ -15,28 +14,26 @@ A comparison of animal bite data in Louisville, KY from 2010-2017 with phases of
 - Pandas
 - Jupyter Notebook
 ### To Run the Project:
-1. Set up a virtual environment and activate it:
+1. Navigate to directory and set up a virtual environment
 `python -m venv venv`
-Windows:
-` venv/Scripts/activate`
-Mac/Linux:
+2. Activate virtual environment
+- Windows:
+`venv\Scripts\activate`
+- Mac/Linux:
 `source venv/bin/activate`
 2. Install requirements.txt
-`python3 -m pip install requirements.txt`
-3. Run lunacy.ipynb in Jupyter Notebook
+`pip install -r requirements.txt`
+3. Type `jupyter notebook` to start Jupyter Notebook, and select lunacy.ipynb to run.
 ---
 ## Summary
----
-The goal of this project is to discover if there is any correlation between animal bites reported in Louisville, KY between October 29th 2009 and September 8th 2017, and the phase of the moon when the bite occurred. The bite dataset contains reports from many other years, but the reporting is inconsistent and missing most of the applicable data points.
+The goal of this project is to discover if there is any correlation between animal bites reported in Louisville, KY between October 29th 2009 and September 8th 2017, and the phase of the moon when the bite occurred. The bite dataset contains reports from many other years, but the reporting is inconsistent and missing most of the applicable data points. Along the way, we learn some interesting things about this dataset.
 
 ---
 ## Visualizations
----
 Tableau Dashboard: [Animal Bites and Lunacy](https://public.tableau.com/app/profile/keith.flynn3286/viz/AnimalBitesandLunacy/dashboard_animal_bites_and_lunacy?publish=yes)
 
 ---
 ## Sources
----
 - [Animal Bites](https://www.kaggle.com/datasets/rtatman/animal-bites)
 - [Daily Moon Illumination 1800 to 2100](https://www.kaggle.com/datasets/petermenzies/daily-moon-illumination-1800-to-2100)
 ---

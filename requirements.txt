@@ -1,2 +1,3 @@
 pandas==1.5.3
 jupyter==1.0.0
+matplotlib==3.7.1

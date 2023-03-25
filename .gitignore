@@ -130,4 +130,4 @@ dmypy.json
 
 # MINE
 /old
-lunacy.db
+lunacy_db.db
