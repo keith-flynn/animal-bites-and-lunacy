@@ -7,7 +7,7 @@ A comparison of animal bite data in Louisville, KY from 2010-2017 with phases of
 - Imports data from CSV files to a SQL database
 - Queries SQL database for relevant data
 - Cleans data and merges into a Pandas dataframe
-- Includes [Tableau dashboard for visualizations](https://public.tableau.com/app/profile/keith.flynn3286/viz/AnimalBitesandLunacy/dashboard_animal_bites_and_lunacy?publish=yes)
+- Includes [Tableau dashboard for visualizations](https://public.tableau.com/views/AnimalBitesandLunacy/dashboard_animal_bites_and_lunacy?:language=en-US&:display_count=n&:origin=viz_share_link)
 ---
 ### Code and Resources Used:
 - Python 3.10
@@ -30,7 +30,7 @@ The goal of this project is to discover if there is any correlation between anim
 
 ---
 ## Visualizations
-Tableau Dashboard: [Animal Bites and Lunacy](https://public.tableau.com/app/profile/keith.flynn3286/viz/AnimalBitesandLunacy/dashboard_animal_bites_and_lunacy?publish=yes)
+Tableau Dashboard: [Animal Bites and Lunacy](https://public.tableau.com/views/AnimalBitesandLunacy/dashboard_animal_bites_and_lunacy?:language=en-US&:display_count=n&:origin=viz_share_link)
 
 ---
 ## Sources
